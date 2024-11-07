@@ -1,40 +1,18 @@
-import React, { useState } from "react";
+import React from 'react';
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Gestisci l'invio del form qui (ad esempio, invio a un API)
-    console.log("Login effettuato con:", { email, password });
-  };
-
   return (
-    <div className="login-form">
-      <h2>Login</h2>
-      <form onSubmit={handleSubmit}>
-        <div>
-          <label>Email</label>
-          <input
-            type="email"
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
-        </div>
-        <div>
-          <label>Password</label>
-          <input
-            type="password"
-            value={password}
-            onChange={(e) => setPassword(e.target.value)}
-            required
-          />
-        </div>
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <form>
+      <div className="mb-3">
+        <label className="form-label">Numero di Cellulare</label>
+        <input type="tel" className="form-control" placeholder="Numero di Cellulare" />
+      </div>
+      <div className="mb-3">
+        <label className="form-label">Password</label>
+        <input type="password" className="form-control" placeholder="Password" />
+      </div>
+      <button type="submit" className="btn btn-primary w-100">Login</button>
+    </form>
   );
 };
 
