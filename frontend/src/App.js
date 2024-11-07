@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import Login from "./components/login.js";
+import Register from "./components/registration.js";
 
-function App() {
+const App = () => {
+  const [isLogin, setIsLogin] = useState(true); // Stato per alternare tra login e registrazione
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <button onClick={() => setIsLogin(true)}>Login</button>
+      <button onClick={() => setIsLogin(false)}>Registrati</button>
+
+      {isLogin ? <Login /> : <Register />}
     </div>
   );
-}
+};
 
 export default App;
