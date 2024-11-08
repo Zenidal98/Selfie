@@ -4,7 +4,7 @@ const Login = () => {
   return (
     <form>
       <div className="mb-3">
-        <label className="form-label">Numero di Cellulare</label>
+        <label className="form-label">Nome Utente</label>
         <input type="tel" className="form-control" placeholder="Numero di Cellulare" />
       </div>
       <div className="mb-3">

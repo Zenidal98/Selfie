@@ -1,21 +1,46 @@
-.app-container {
-    background-color: #f8f9fa;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .auth-container {
-    display: flex;
-    gap: 20px;
-  }
-  
-  .auth-card {
-    padding: 20px;
-    width: 300px;
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  }
+/* App.css */
+
+/* Background color */
+.App {
+  background-color: rgb(211, 206, 206);  /* Colore di sfondo per il corpo */
+  min-height: 100vh; /* Altezza minima per coprire tutto lo schermo */
+}
+
+/* Centrare il contenuto e aggiungere padding in cima */
+.header {
+  text-align: center; /* Centrato orizzontalmente */
+  padding-top: 50px; /* Spazio sopra il titolo */
+}
+
+/* Titolo "Selfie" */
+.header h1 {
+  font-size: 3rem;
+  color: #00aaff; /* Azzurro */
+}
+
+/* Sottotitolo piccolo */
+.header p {
+  font-size: 12px;
+  color: #6c757d; /* Colore grigio chiaro per il testo piccolo */
+}
+
+/* Stile per i bottoni */
+button {
+  border-radius: 50px; /* Angoli arrotondati per i bottoni */
+}
+
+/* Card per login e registrazione */
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra leggera per la card */
+  border-radius: 8px; /* Angoli arrotondati per la card */
+  background-color: #ffffff; /* Colore di sfondo della card */
+}
+
+/* Posizionamento e spaziatura dei bottoni nella sezione centrale */
+button {
+  margin: 10px;
+}
+
+.container {
+  margin-top: 50px; /* Spazio tra l'header e la parte centrale della pagina */
+}
